@@ -127,11 +127,13 @@ fechas = []
 for i in range(st.session_state.cantidad_fechas):
 
     fecha = st.date_input(
-        f"Persona {i + 1}",
-        value=date(2000, 1, 1),
-        max_value=date.today(),
-        key=f"fecha_{i}"
-    )
+    f"Persona {i + 1}",
+    value=date(2000, 1, 1),
+    min_value=date(1900, 1, 1),
+    max_value=date.today(),
+    format="DD/MM/YYYY",
+    key=f"fecha_{i}"
+)
 
     fechas.append(fecha)
 
