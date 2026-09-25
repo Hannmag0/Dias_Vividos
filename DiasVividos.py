@@ -15,7 +15,7 @@ from datetime import date
 # CONFIGURACIÓN DE LA PÁGINA
 
 st.set_page_config(
-    page_title="Calculadora de días vividos",
+    page_title="Calculadora de días vividos - Hannia",
     page_icon="📅",
     layout="wide"
 )
